@@ -1,0 +1,2 @@
+git+https://github.com/m-bain/whisperx.git
+bentoml @ git+https://github.com/bentoml/BentoML.git@7861cccf2edcd901e6302f6dccd89d8880063ff0
