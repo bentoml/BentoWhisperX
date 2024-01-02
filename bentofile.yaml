@@ -6,6 +6,6 @@ include:
   - "*.py"
 python:
   requirements_txt: requirements.txt
-docker:
-  env:
-    HF_TOKEN: Null
+# TODO: add env var for HF_TOKEN
+# env:
+#   HF_TOKEN: Null
