@@ -7,7 +7,13 @@ from pathlib import Path
 LANGUAGE_CODE = "en"
 
 
-@bentoml.service(traffic={"timeout": 30})
+@bentoml.service(
+    traffic={"timeout": 30},
+    resources={
+        "GPU": 1,
+        "memory": "8Gi",
+    },
+)
 class BentoWhisperX:
     """
     This class is inspired by the implementation shown in the whisperX project.
