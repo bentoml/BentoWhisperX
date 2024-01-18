@@ -1,5 +1,6 @@
 import bentoml
 import os
+import typing as t
 
 from pathlib import Path
 
@@ -25,7 +26,7 @@ class BentoWhisperX:
         self.diarize_model = whisperx.DiarizationPipeline(use_auth_token=os.getenv("HF_TOKEN"), device=self.device)
 
     @bentoml.api
-    def transcribe(self, audio_file: Path) -> list:
+    def transcribe(self, audio_file: Path) -> t.Dict:
         import whisperx
 
         audio = whisperx.load_audio(audio_file)
@@ -35,7 +36,7 @@ class BentoWhisperX:
         return result
     
     @bentoml.api
-    def diarize(self, audio_file: Path) -> list:
+    def diarize(self, audio_file: Path) -> t.Dict:
         import whisperx
 
         audio = whisperx.load_audio(audio_file)
