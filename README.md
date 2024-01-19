@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## Run the BentoML Service
 
 We have defined a BentoML Service in `service.py`. Run `bentoml serve` in your project directory to start the Service.
-Please note that you may need to request access to [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0) and provide your huggingface token when running the service.
+Please note that you may need to request access to [pyannote/segmentation-3.0](https://huggingface.co/pyannote/segmentation-3.0) and [pyannote/speaker-diarization-3.1](https://huggingface.co/pyannote/speaker-diarization-3.1) then provide your huggingface token when running the service.
 
 ```python
 $ HF_TOKEN=<your hf access token> bentoml serve .
