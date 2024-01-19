@@ -10,7 +10,7 @@ LANGUAGE_CODE = "en"
 @bentoml.service(
     traffic={"timeout": 30},
     resources={
-        "GPU": 1,
+        "gpu": 1,
         "memory": "8Gi",
     },
 )
