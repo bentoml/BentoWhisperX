@@ -13,4 +13,4 @@ docker:
 # User to add their huggingface token
 envs:
   - name: HF_TOKEN
-    # value: your-token-here
+    value: Null
