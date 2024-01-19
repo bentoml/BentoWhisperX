@@ -6,6 +6,11 @@ include:
   - "*.py"
 python:
   requirements_txt: requirements.txt
-# TODO: add env var for HF_TOKEN
-# env:
-#   HF_TOKEN: Null
+docker:
+  system_packages:
+    - ffmpeg
+    - git
+# User to add their huggingface token
+envs:
+  - name: HF_TOKEN
+    # value: your-token-here
