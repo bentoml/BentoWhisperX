@@ -1,2 +1,2 @@
+bentoml==1.2.0a3
 git+https://github.com/m-bain/whisperx.git
-bentoml>=1.2.0a0
