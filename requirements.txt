@@ -69,7 +69,7 @@ pydantic==2.5.3
 pydantic_core==2.14.6
 Pygments==2.17.2
 PyGObject==3.42.1
-PyJWT==2.3.0
+PyJWT==2.4.0
 pyparsing==2.4.7
 pyproject_hooks==1.0.0
 python-apt==2.4.0+ubuntu2
