@@ -19,7 +19,7 @@ click==8.1.7
 click-option-group==0.5.6
 cloudpickle==3.0.0
 contextlib2==21.6.0
-cryptography==3.4.8
+cryptography==41.0.6
 dbus-python==1.2.18
 deepmerge==1.1.1
 Deprecated==1.2.14
