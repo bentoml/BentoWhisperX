@@ -10,6 +10,8 @@ This project demonstrates how to build a speech recognition application using Be
 ## Install dependencies
 
 ```bash
+git clone https://github.com/bentoml/BentoWhisperX.git
+cd BentoWhisperX
 pip install -r requirements.txt
 ```
 
