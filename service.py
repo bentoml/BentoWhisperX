@@ -14,7 +14,7 @@ LANGUAGE_CODE = "en"
         "memory": "8Gi",
     },
 )
-class BentoWhisperX:
+class WhisperX:
     """
     This class is inspired by the implementation shown in the whisperX project.
     Source: https://github.com/m-bain/whisperX

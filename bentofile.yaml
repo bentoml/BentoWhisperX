@@ -1,4 +1,4 @@
-service: "service.py:BentoWhisperX"
+service: "service.py:WhisperX"
 labels:
   owner: bentoml-team
   project: gallery
@@ -13,4 +13,3 @@ docker:
 # User to add their huggingface token
 envs:
   - name: HF_TOKEN
-    value: Null
