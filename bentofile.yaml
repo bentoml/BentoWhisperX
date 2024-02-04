@@ -10,6 +10,3 @@ docker:
   system_packages:
     - ffmpeg
     - git
-# User to add their huggingface token
-envs:
-  - name: HF_TOKEN
