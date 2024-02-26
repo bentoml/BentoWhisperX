@@ -1,15 +1,10 @@
 <div align="center">
-    <h1 align="center">BentoWhisperX</h1>
-    <br>
-    <strong>High performance speech recognition service<br></strong>
-    <i>Powered by BentoML 🍱</i>
-    <br>
+    <h1 align="center">Serving WhisperX with BentoML</h1>
 </div>
-<br>
 
-Speech recognition in machine learning interprets spoken language into text, enabling computers to understand human speech. Use cases include voice-activated assistants, transcription services, customer support automation, and accessibility tools for individuals with disabilities.
+[WhisperX](https://github.com/m-bain/WhisperX) provides fast automatic speech recognition with word-level timestamps and speaker diarization.
 
-This project demonstrates how to build a speech recognition application using BentoML, powered by [whisperX](https://github.com/m-bain/WhisperX).
+This is a BentoML example project, demonstrating how to build a speech recognition inference API server, using the WhisperX project. See [here](https://github.com/bentoml/BentoML?tab=readme-ov-file#%EF%B8%8F-what-you-can-build-with-bentoml) for a full list of BentoML example projects.
 
 ## Prerequisites
 
@@ -59,6 +54,8 @@ with bentoml.SyncHTTPClient('http://localhost:3000') as client:
     response = client.transcribe(audio_file=audio_url)
     print(response)
 ```
+
+For detailed explanations of the Service code, see [WhisperX: Speech recognition](https://docs.bentoml.org/en/latest/use-cases/audio/whisperx.html).
 
 ## Deploy to BentoCloud
 
