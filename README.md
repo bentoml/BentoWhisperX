@@ -1,4 +1,10 @@
-This project demonstrates how to build a speech recognition application using BentoML, powered by [whisperX](https://github.com/m-bain/whisperX).
+<div align="center">
+    <h1 align="center">Serving WhisperX with BentoML</h1>
+</div>
+
+[WhisperX](https://github.com/m-bain/WhisperX) provides fast automatic speech recognition with word-level timestamps and speaker diarization.
+
+This is a BentoML example project, demonstrating how to build a speech recognition inference API server, using the WhisperX project. See [here](https://github.com/bentoml/BentoML?tab=readme-ov-file#%EF%B8%8F-what-you-can-build-with-bentoml) for a full list of BentoML example projects.
 
 ## Prerequisites
 
@@ -37,7 +43,7 @@ curl -s \
      http://localhost:3000/transcribe
 ```
 
-BentoML client
+Python client
 
 ```python
 from pathlib import Path
@@ -49,11 +55,13 @@ with bentoml.SyncHTTPClient('http://localhost:3000') as client:
     print(response)
 ```
 
-## Deploy to production
+For detailed explanations of the Service code, see [WhisperX: Speech recognition](https://docs.bentoml.org/en/latest/use-cases/audio/whisperx.html).
 
-After the Service is ready, you can deploy the application to BentoCloud for better management and scalability. A configuration YAML file (`bentofile.yaml`) is used to define the build options for your application. It is used for packaging your application into a Bento. See [Bento build options](https://docs.bentoml.com/en/latest/concepts/bento.html#bento-build-options) to learn more.
+## Deploy to BentoCloud
 
-Make sure you have [logged in to BentoCloud](https://docs.bentoml.com/en/1.2/bentocloud/how-tos/manage-access-token.html) and set your Hugging Face access token in `bentofile.yaml`, then run the following command in your project directory to deploy the application to BentoCloud.
+After the Service is ready, you can deploy the application to BentoCloud for better management and scalability. [Sign up](https://www.bentoml.com/) if you haven't got a BentoCloud account.
+
+Make sure you have [logged in to BentoCloud](https://docs.bentoml.com/en/latest/bentocloud/how-tos/manage-access-token.html) and set your Hugging Face access token in `bentofile.yaml`, then run the following command to deploy it.
 
 ```bash
 bentoml deploy .
@@ -61,4 +69,4 @@ bentoml deploy .
 
 Once the application is up and running on BentoCloud, you can access it via the exposed URL.
 
-**Note**: Alternatively, you can use BentoML to generate a [Docker image](https://docs.bentoml.com/en/1.2/guides/containerization.html) for a custom deployment.
+**Note**: For custom deployment in your own infrastructure, use [BentoML to generate an OCI-compliant image](https://docs.bentoml.com/en/latest/guides/containerization.html).
