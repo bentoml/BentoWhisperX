@@ -1,3 +1,3 @@
 bentoml>=1.2.3
 torch==2.1.2
-git+https://github.com/m-bain/whisperx.git@e906be9688334b4ae7d3a23f69734ac901a255ee
+git+https://github.com/m-bain/whisperX.git@78dcfaab51005aa703ee21375f81ed31bc248560
