@@ -1,3 +1,4 @@
-bentoml>=1.2.3
+bentoml>=1.2.17
+numpy~=1.0
 torch==2.1.2
 git+https://github.com/m-bain/whisperX.git@78dcfaab51005aa703ee21375f81ed31bc248560
