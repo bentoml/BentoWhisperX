@@ -6,6 +6,7 @@ include:
   - "*.py"
 python:
   requirements_txt: requirements.txt
+  pack_git_packages: false
 docker:
   python_version: "3.11"
   system_packages:
