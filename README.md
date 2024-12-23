@@ -4,7 +4,7 @@
 
 [WhisperX](https://github.com/m-bain/WhisperX) provides fast automatic speech recognition with word-level timestamps and speaker diarization.
 
-This is a BentoML example project, demonstrating how to build a speech recognition inference API server, using the WhisperX project. See [here](https://github.com/bentoml/BentoML/tree/main/examples) for a full list of BentoML example projects.
+This is a BentoML example project, demonstrating how to build a speech recognition inference API server, using the WhisperX project. See [here](https://docs.bentoml.com/en/latest/examples/overview.html) for a full list of BentoML example projects.
 
 ## Prerequisites
 
