@@ -1,4 +1,5 @@
-bentoml>=1.3.5
-faster-whisper==1.0.0
+bentoml>=1.3.17
+faster-whisper==1.1.0
 numpy~=1.0
-whisperx @ git+https://github.com/m-bain/whisperX.git@9e3a9e0e38fcec1304e1784381059a0e2c670be5
+torch<2.4.0  # keep cudnn version <9
+whisperx==3.3.1
