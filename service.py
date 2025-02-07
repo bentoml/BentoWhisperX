@@ -14,7 +14,7 @@ with bentoml.importing():
     .python_packages("faster-whisper==1.1.0\n")
     .python_packages("numpy~=1.0\n")
     .python_packages("whisperx==3.3.1\n")
-    .python_packages("bentom>=1.3.20\n"),
+    .python_packages("bentoml>=1.3.20\n"),
 )
 class WhisperX:
     """
