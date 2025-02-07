@@ -4,9 +4,3 @@ labels:
   project: gallery
 include:
   - "*.py"
-python:
-  requirements_txt: requirements.txt
-docker:
-  python_version: "3.11"
-  system_packages:
-    - ffmpeg

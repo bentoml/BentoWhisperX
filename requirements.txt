@@ -1,5 +1,0 @@
-bentoml>=1.3.17
-faster-whisper==1.1.0
-numpy~=1.0
-torch<2.4.0  # keep cudnn version <9
-whisperx==3.3.1
